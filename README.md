@@ -1,49 +1,13 @@
-# Elegant Theme [![npm version](https://badge.fury.io/js/jsonresume-theme-elegant.svg)](http://badge.fury.io/js/jsonresume-theme-elegant)
+# Elegant Theme - modified version by Alicia Parisse
 
 Responsive theme for [JsonResume](https://jsonresume.org/) inspired by card layouts.
 
-[Theme Preview](http://themes.jsonresume.org/elegant)
+[Theme Preview](http://themes.jsonresume.org/elegant) for the original version
 
-### Markdown Supported
-Only in the following places of now `resume.basics.summary`, `work[0].summary`, `volunteer[0].summary`, `awards[0].summary`, `publications[0].summary`, `references[0].reference`. If you have any other usecase, please raise an issue
+This is only a fork of the github repo from mudassir0909, that you can find in [this place](https://github.com/mudassir0909/jsonresume-theme-elegant).
+This is for my personal use so I can't assure you of the fact that it will work with your resume.
 
-### Social Profiles
-The profiles are shown in the order in which they are specified in the `basics.profiles` array. By default, only 5 profiles are shown & others are revealed on demand.
-
-![Profile Section](https://raw.githubusercontent.com/mudassir0909/jsonresume-theme-elegant/master/screenshots/profile.png)
-
-#### Supported Profiles
-* angellist
-* behance
-* bitbucket
-* codepen
-* dribbble
-* dribble
-* exercism
-* facebook
-* foursquare
-* instagram
-* github
-* googleplus
-* gratipay
-* hackernews
-* lastfm
-* linkedin
-* pinterest
-* reddit
-* skype
-* soundcloud
-* spotify
-* stackexchange
-* stackoverflow
-* tumblr
-* twitter
-* vimeo
-* youtube
-
-### Credits
-* Thank you [contributors](https://github.com/mudassir0909/jsonresume-theme-elegant/graphs/contributors) for your pull requests
-* Floating Menu: inspired by [Smart Fixed Navigation](http://codyhouse.co/demo/smart-fixed-navigation/index.html)
+You can still contribute to the original repo, so I left the instructions here.
 
 ### Contributing
 ```
@@ -56,19 +20,3 @@ $ grunt exec:run_server // Do this in a new terminal tab to run node server
 
 Visit [http://localhost:8888](http://localhost:8888) to see the theme in action.
 
-[![Throughput Graph](https://graphs.waffle.io/mudassir0909/jsonresume-theme-elegant/throughput.svg)](https://waffle.io/mudassir0909/jsonresume-theme-elegant/metrics)
-
-##### Testing JSON changes
-You can test your changes by updating `resume.json` file inside `node_modules/resume-schema/` folder. You might want to rerun `grunt exec:run_server` whenever you make any changes to `resume.json`
-
-##### Updating Styles
-All the LESS files are organized under the folder `assets/less/`. Please go through the comments inside `theme.less` to find out which file to put your LESS changes. Grunt compiles `assets/less/theme.less` to `assets/css/theme.css` which is used eventually in the theme.
-
-**_Please Do not make any changes inside `assets/css/theme.css`_**
-
-##### Updating Javascript
-All the javascript changes go into `index.js` which is responsible for rendering the theme.
-
-### Roadmap
-
-[https://github.com/mudassir0909/jsonresume-theme-elegant/labels/enhancement](https://github.com/mudassir0909/jsonresume-theme-elegant/labels/enhancement)

@@ -44,7 +44,8 @@ function getFloatingNavItems(resume) {
         {label: 'Volunteer Work', target: 'volunteer-work', icon: 'child', requires: 'volunteer'},
         {label: 'Publications', target: 'publications', icon: 'newspaper', requires: 'publications'},
         {label: 'Interests', target: 'interests', icon: 'heart', requires: 'interests'},
-        {label: 'References', target: 'references', icon: 'thumbs-up', requires: 'references'}
+        {label: 'References', target: 'references', icon: 'thumbs-up', requires: 'references'},
+        {label: 'Languages', target:'languages', icon:'language', requires:'languages'}
     ];
 
     return _(floating_nav_items).filter(function(item) {
@@ -69,9 +70,9 @@ function render(resume) {
 
     resume.basics.computed_location = _.compact(addressValues).join(', ');
 
-    if (resume.languages) {
+    /*if (resume.languages) {
         resume.basics.languages = _.pluck(resume.languages, 'language').join(', ');
-    }
+    }*/
 
     _(resume.basics.profiles).each(function(profile) {
         var label = profile.network.toLowerCase();
@@ -116,6 +117,10 @@ function render(resume) {
             skill_info.display_progress_bar = _.contains(levels, skill_info.level);
         }
     });
+
+    _.each(resume.languages, function(language_info){
+        language_info.summary = convertMarkdown(language_info.language);
+    })
 
     _.each(resume.education, function(education_info) {
         _.each(['startDate', 'endDate'], function(type) {
@@ -166,6 +171,8 @@ function render(resume) {
     _.each(resume.references, function(reference_info) {
         reference_info.reference = convertMarkdown(reference_info.reference);
     });
+
+
 
     return jade.renderFile(__dirname + '/index.jade', {
       resume: resume,

@@ -1,4 +1,7 @@
 // Originally taken from https://github.com/codebox/moment-precise-range
+// This files is the one that lets you display the number of month some activity lasted,
+// when you entered only the begin and end date.
+
 var moment = require('moment');
 
 (function(moment) {

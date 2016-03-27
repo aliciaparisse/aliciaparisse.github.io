@@ -3,14 +3,14 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         less: {
-          development: {
-            options: {
-              paths: ["assets"]
-            },
-            files: {
-              "assets/css/theme.css": "assets/less/theme.less"
+            development: {
+                options: {
+                    paths: ["assets"]
+                },
+                files: {
+                    "assets/css/theme.css": "assets/less/theme.less"
+                }
             }
-          }
         },
         watch: {
             styles: {
@@ -47,6 +47,12 @@ module.exports = function(grunt) {
                 src: [ 'favicon.ico' ],
                 dest: './build/',
                 expand: true
+            },
+            images :{
+                cwd: './assets',
+                src: ['hy.png', 'hy.svg'],
+                dest: './build/assets',
+                expand: true
             }
         },
         clean: {
@@ -77,9 +83,10 @@ module.exports = function(grunt) {
         /* Uncomment this item once you've created your own resume.json file
            in the project root.  This will use your own data to build your site.
          */
-        // 'copy:resumejson',
+        'copy:resumejson',
         'clean',
         'copy:build',
+        'copy:images',
         'less',
         'exec:build_index' //,
         /* Uncomment this item (and the comma above) if you add a favicon.ico

@@ -1,0 +1,18 @@
+unless _.isEmpty(resume.languages)
+    .detail#languages
+        .icon
+            i.fs-lg.icon-language
+            span.mobile-title Languages
+
+        .info
+            h4.title.text-uppercase Languages
+
+            .content
+                ul.list-unstyled.clear-margin
+                    - each language in resume.languages
+                        li.card.card-nested.card-languages
+                            .language-info
+                                img(src="assets/hy.png", height="32")
+                                strong #{language.language}&nbsp;
+                                span= language.fluency
+
