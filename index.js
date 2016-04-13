@@ -36,16 +36,16 @@ function convertMarkdown(str) {
 
 function getFloatingNavItems(resume) {
     var floating_nav_items = [
-        {label: 'About', target: 'about', icon: 'board', requires: 'basics.summary'},
-        {label: 'Work Experience', target: 'work-experience', icon: 'office', requires: 'work'},
-        {label: 'Skills', target: 'skills', icon: 'tools', requires: 'skills'},
-        {label: 'Education', target: 'education', icon: 'graduation-cap', requires: 'education'},
-        {label: 'Awards', target: 'awards', icon: 'trophy', requires: 'awards'},
-        {label: 'Volunteer Work', target: 'volunteer-work', icon: 'child', requires: 'volunteer'},
+        {label: "À propos", target: 'about', icon: 'board', requires: 'basics.summary'},
+        {label: "Expérience professionnelle", target: 'work-experience', icon: 'office', requires: 'work'},
+        {label: 'Compétences', target: 'skills', icon: 'tools', requires: 'skills'},
+        {label: 'Formation', target: 'education', icon: 'graduation-cap', requires: 'education'},
+        {label: 'Récompenses', target: 'awards', icon: 'trophy', requires: 'awards'},
+        {label: 'Associatif', target: 'volunteer-work', icon: 'child', requires: 'volunteer'},
         {label: 'Publications', target: 'publications', icon: 'newspaper', requires: 'publications'},
-        {label: 'Interests', target: 'interests', icon: 'heart', requires: 'interests'},
-        {label: 'References', target: 'references', icon: 'thumbs-up', requires: 'references'},
-        {label: 'Languages', target:'languages', icon:'language', requires:'languages'}
+        {label: 'Centres d\'intérêts', target: 'interests', icon: 'heart', requires: 'interests'},
+        {label: 'Références', target: 'references', icon: 'thumbs-up', requires: 'references'},
+        {label: 'Langues', target:'languages', icon:'language', requires:'languages'}
     ];
 
     return _(floating_nav_items).filter(function(item) {
@@ -96,12 +96,12 @@ function render(resume) {
             work_info.endDate = utils.getFormattedDate(end_date);
         }
 
-        if (start_date) {
+        /*if (start_date) {
             end_date = end_date ? moment(end_date) : moment();
             work_info.startDate = utils.getFormattedDate(start_date);
 
             work_info.duration = moment.preciseDiff(start_date, end_date);
-        }
+        }*/
 
         work_info.highlights = _(work_info.highlights).map(function(highlight) {
             return convertMarkdown(highlight);

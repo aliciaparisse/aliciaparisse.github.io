@@ -1,0 +1,182 @@
+{
+  "basics": {
+    "name": "Alicia Parisse",
+    "label": "Etudiante ingénieure - Développeuse",
+    "picture": "assets/alicia.jpg",
+    "email": "alicia.parisse@gmail.com",
+    "phone": "(+33)(0)6 16 36 66 17",
+    "website": "http://aliciaparisse.github.io",
+    "summary": "Mon nom est Alicia Parisse et je suis actuellement en train de finir mon diplôme d'ingénieur en Informatique à l'INSA de Lyon. J'ai commencé par faire des études de sciences générales avant de découvrir l'informatique à l'INSA de Lyon. Depuis, je suis passionnée par le développement web et j'ai essayé de m'améliorer dans ce domaine tant par des projets personnels que professionnels.<br/><br/> Au cours de mes études, je me suis engagée dans plusieurs associations, notamment en tant que Présidente de l'association des étudiants en informatique. J'ai du gérer une équipe et faire en sorte que les évènements que nous organisions soient intéressants pour les étudiants. Je me suis toujours sentie accueillie dans le monde de l'informatique, car c'est un univers ouvert qui cherche toujours à s'améliorer et faire avancer le monde dans le bon sens. <br/><br/> Mais j'ai découvert rapidement que c'était également un monde dans lequel peu de femmes sont présentes. Je me suis découverte être une féministe, et faire en sorte que la prochaine génération de femmes et de filles puisse considérer le monde de l'informatique comme un endroit où elle sont les bienvenues.<br/><br> Comme je l'ai dit, je suis une personne passionée, motivée, que ce soit dans la vie ou au travail. Je ferai toujours de mon mieux pour les choses dans lesquelles je crois, que ce soit le féminisme ou mon travail.",
+    "location": {
+      "address": "72 avenue F. Mitterrand",
+      "postalCode": "69500",
+      "city": "Bron",
+      "countryCode": "France"
+    },
+    "website-desc":"Ce site a été développé avec JSON Resume Schema, adapté à mes besoins. Toutes les informations se trouvent sur mon repo Github.",
+    "profiles": [{
+      "network": "LinkedIn",
+      "username": "Alicia Parisse",
+      "url": "https://fr.linkedin.com/in/alicia-parisse-8761539b"
+    },{
+      "network": "Github",
+      "username": "aliciaparisse",
+      "url": "https://github.com/aliciaparisse"
+    },{
+      "network": "Twitter",
+      "username": "LiciaParisse",
+      "url": "https://twitter.com/LiciaParisse"
+    }]
+  },
+
+  "work": [{
+    "company": "Université d'Helsinki - Équipe de recherche RAGE",
+    "position": "Interne en développement",
+    "website": "https://www.cs.helsinki.fi/en/rage/",
+    "startDate": "2016-01-11",
+    "endDate": "2016-06-02",
+    "dates": "Janv. 2016 - Juin 2016",
+    "duration" : "6 mois",
+    "summary": "Développement d'un tableau de bord à l'usage des étudiants",
+    "highlights": [
+      "Réalisation d'une interface complète - Conception, développement, production",
+      "Développement full-stack",
+      "Technologies utilisées : Angular2 (javascript and typescript), gulp, express, mongodb, html, css",
+      "Travail en autonomie, gestion de projet"
+    ]
+  },{
+    "company": "Lyra-Network",
+    "position": "Interne en développement",
+    "website": "http://www.soprasteria.com/en/home",
+    "startDate": "2015-05-11",
+    "endDate": "2015-08-21",
+    "dates": "Mai 2015 - Août 2015",
+    "duration" : "4 mois",
+    "summary": "Sécurité et gestion des utilisateurs",
+    "highlights": [
+      "Déploiement d'une application de gestion de l'authentification, des autorisations et des droits des utilisateurs",
+      "Montée en compétence sur les thèmes de la sécurité informatique"
+    ],
+    "keywords":[
+      "html"
+    ]
+  },{
+    "company": "Sopra",
+    "position": "Interne en Développement",
+    "website": "https://www.lyra-network.com/",
+    "startDate": "2015-06-02",
+    "endDate": "2015-09-05",
+    "dates": "Juin 2014 - Septembre 2014",
+    "duration" : "3 mois",
+    "summary": "Développment d'une interface de gestion des trajectoires financières",
+    "highlights": [
+      "Réalisation d'une interface complète - Conception, développement, production",
+      "Montée de compétences sur des technologies web : Bootstrap, KnockOut.js",
+      "Travail en autonomie"
+    ]
+  }],
+  "volunteer": [{
+    "organization": "AEDI - Association des Étudiants du Département Information de l'INSA de Lyon",
+    "position": "Présidente",
+    "website": "http://aedi.insa-lyon.fr/",
+    "startDate": "2014-04-15",
+    "endDate": "2015-04-21",
+    "dates":"Avril 2014 - Avril 2015",
+    "summary": "En tant que présidente de l'association, j'ai représenté les étudiants auprès de la direction du département. J'étais responsable du bien être des étudiants au sein du département Informatique et de leur intégration dans la vie étudiante. Mon équipe et moi-même avons ainsi organisé de nombreux événements allant de 50 à 200 personnes, du week-end d'intégration à la promotion du département, en passant par des rencontres avec les entreprises.",
+    "highlights": [
+      "Organisation d'évènements, gestion d'une équipe de 20 personnes",
+      "Gestion des relations avec les entreprises"
+    ]
+  },{
+    "organization": "TTI - Troupe Théâtrale de l'INSA",
+    "position": "Metteuse en scène, comédienne, membre du bureau",
+    "website": "http://tti.insa-lyon.fr/",
+    "startDate": "2013-09",
+    "endDate": "2015-06",
+    "dates":"Septembre 201 - Juin 2015",
+    "summary": "J'ai toujours été passionnée par le théâtre, et j'ai rejoint l'association des étudiants quand j'étais en 3ème année à l'INSA de Lyon. J'ai été comédienne et metteuse en scène au cours de mes années de mon engagement dans l'association. En tant que metteuse en scène, j'ai aussi fait partie du bureau de l'association. Nous nous rencontrions chaque semaine pour organiser les événements des différentes équipes contenues dans l'association, leur publicité.",
+    "highlights": [
+      "Comédienne dans une pièce féministe, Les Gaillardes écrit par Mickaël Délis",
+      "Metteuse en scène et comédienne, Les Justes écrit par Albert Camus"
+    ]}
+  ],
+  "education": [{
+    "institution": "Université d'Helsinki",
+    "area": "Informatique",
+    "studyType": "Année d'échange universitaire",
+    "startDate": "2015-08-24",
+    "endDate": "2016-05-31",
+    "dates":"Août 2015 - Mai 2016",
+    "courses": [
+      "Design et Analyse d'algorithmes, Créativité Computationnelle",
+      "Programmation : Algorithmes appliquées à la génétique, algorithmes de traitement de chaînes de caractères et chaînes de Markov en Python"
+    ]
+  },{
+    "institution": "INSA de Lyon",
+    "area": "Informatique",
+    "studyType": "Diplôme d'ingénieur",
+    "startDate": "2011-09-02",
+    "endDate": "2016-06-30",
+    "dates":"Septembre 2011 - Juin 2016",
+    "courses": [
+      "Systèmes d'informations, Réseaux, Gestion de Projet, Bases de données",
+      "Programmation : C++, C, Java, Web (html, css, javascript)"
+    ]},{
+    "institution": "Lycée Jean-Paul Sartre",
+    "area": "Baccalauréat Général",
+    "studyType": "Scientifique",
+    "startDate": "2008-09",
+    "endDate": "2011-06",
+    "dates":"Septembre 2009 - Juin 2011",
+    "courses": [
+      "Baccalauréat Mention Très Bien, Mention Européenne Allemand"
+    ]}
+  ],
+  "skills": [{
+    "name": "Développement",
+    "keywords": [
+      "Node.js",
+      "Angular2",
+      "Express",
+      "MongoDB",
+      "J2EE",
+      "Bootstrap"
+    ]},{
+    "name": "Languages de programmation",
+    "keywords": [
+      "Java",
+      "C",
+      "C++",
+      "Python",
+      "Javascript (jQuery, Ajax)",
+      "HTML5",
+      "CSS",
+      "JSON",
+      "XML"
+    ]},{
+    "name": "Gestion de Projet",
+    "keywords": [
+      "Management",
+      "Plannification",
+      "Organisation d'évènements",
+      "Méthodes agiles"
+    ]},{
+    "name": "Logiciels",
+    "keywords": [
+      "Eclipse",
+      "Netbeans",
+      "WebStorm"
+      ]}
+  ],
+  "languages": [
+    {
+    "language": "Anglais",
+    "fluency": "Courant - 9 ans"
+  },{
+    "language": "German",
+    "fluency": "Intermédiaire - 5 ans"
+  },{
+    "language": "Finnois",
+    "fluency": "Débutante - 1 an"
+  }]
+}

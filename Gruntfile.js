@@ -50,8 +50,14 @@ module.exports = function(grunt) {
             },
             images :{
                 cwd: './assets',
-                src: ['hy.png', 'hy.svg'],
+                src: ['hy.png', 'hy.svg', 'alicia.jpg'],
                 dest: './build/assets',
+                expand: true
+            },
+            index:{
+                cwd:'./build/',
+                src:['index.html'],
+                dest:'.',
                 expand: true
             }
         },
@@ -80,20 +86,14 @@ module.exports = function(grunt) {
     // Default tasks
     grunt.registerTask('default', ['exec']);
     grunt.registerTask('build', [
-        /* Uncomment this item once you've created your own resume.json file
-           in the project root.  This will use your own data to build your site.
-         */
         'copy:resumejson',
         'clean',
         'copy:build',
         'copy:images',
+        'copy:favicon',
         'less',
-        'exec:build_index' //,
-        /* Uncomment this item (and the comma above) if you add a favicon.ico
-           in the project root. You'll also need to uncomment the <link...> tag
-           at the top of resume.template.
-         */
-        // 'copy:favicon'
+        'exec:build_index',
+        'copy:index'
     ]);
     grunt.registerTask('serve', [
         'build',

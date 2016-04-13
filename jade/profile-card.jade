@@ -20,9 +20,12 @@ mixin render_links(profiles)
 section.col-md-3.card-wrapper.profile-card-wrapper.affix
   .card.profile-card
     span.profile-pic-container
-      .profile-pic
+      .profile-picture
         img.media-object.img-circle.center-block(
-          data-src="holder.js/100x100",
+          data-src="holder.js/150x150",
+          height=150,
+          width=150,
+          padding=20,
           alt=resume.basics.name,
           src=resume.basics.picture,
           itemprop="image")

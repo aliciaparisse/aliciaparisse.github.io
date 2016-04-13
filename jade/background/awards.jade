@@ -2,22 +2,22 @@ unless _.isEmpty(resume.awards)
   .detail#awards
     .icon
       i.fs-lg.icon-trophy
-      span.mobile-title Awards
+      span.mobile-title Récompenses
 
     .info
-      h4.title.text-uppercase Awards
+      h4.title.text-uppercase Récompenses
 
       .content
         ul.list-unstyled.clear-margin
           - each award in resume.awards
             li.card.card-nested
               .content
-                p.clear-margin(itemprop="award")
+                p.clear-margin(itemprop="recompense")
                   strong= award.title + " "
                   |#{award.awarder}
 
                 p.text-muted
                   small
-                    |Awarded on: #{award.date}
+                    |Reçu le: #{award.date}
 
                 .mop-wrapper!= award.summary
